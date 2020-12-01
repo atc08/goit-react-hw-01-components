@@ -1,6 +1,3 @@
-add propTypes "npm i prop-types" import to component "import PropTypes from
-'prop-types';"
-
 # Getting Started with Create React App
 
 This project was bootstrapped with

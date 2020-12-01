@@ -36,11 +36,11 @@ const Profile = ({ avatar = defaultImg, name, tag, location = 'unknown', stats }
 }
 
 Profile.propTypes = {
-  avatar: PropTypes.string,
-  name: PropTypes.string,
-  tag: PropTypes.string,
-  location: PropTypes.string,
-  stats: PropTypes.objectOf(PropTypes.number,),
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number.isRequired,),
 };
 
 export default Profile;

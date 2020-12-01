@@ -1,7 +1,13 @@
 import PropTypes from 'prop-types';
-import defaultImg from './logo.svg'
+import defaultImg from './logo.svg';
 
-const Profile = ({ avatar = defaultImg, name, tag, location = 'unknown', stats }) => {
+const Profile = ({
+  avatar = defaultImg,
+  name,
+  tag,
+  location = 'unknown',
+  stats,
+}) => {
   return (
     <div className="profile">
       <div className="description">
@@ -33,14 +39,14 @@ const Profile = ({ avatar = defaultImg, name, tag, location = 'unknown', stats }
       </ul>
     </div>
   );
-}
+};
 
 Profile.propTypes = {
   avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf(PropTypes.number.isRequired,),
+  stats: PropTypes.objectOf(PropTypes.number.isRequired),
 };
 
 export default Profile;

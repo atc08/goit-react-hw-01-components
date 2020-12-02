@@ -1,7 +1,6 @@
 import s from './FriendList.module.css';
 
-const FriendListItem = ({ items }) => {
-  const { avatar, name, isOnline } = items;
+const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <li className={s.item}>
       <span
